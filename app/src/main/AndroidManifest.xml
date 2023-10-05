@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.ContactsDirectory">
-        <activity android:name="com.allaykhalil.contactsdirectory.ui.contacts.ContactsActivity">
+        <activity android:name="com.allaykhalil.contactsdirectory.ui.contacts.ContactsActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

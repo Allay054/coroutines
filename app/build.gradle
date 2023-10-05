@@ -3,18 +3,16 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'kotlin-android-extensions'
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdk 34
     flavorDimensions "default"
 
     defaultConfig {
-        applicationId "com.asad.contactsdirectory"
-        minSdkVersion minVersion
-        targetSdkVersion targetVersion
+        applicationId "com.allaykhalil.contactsdirectory"
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -103,5 +101,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
     implementation "androidx.room:room-testing:$roomVersion"
+
+    implementation 'androidx.activity:activity-compose:1.6.1'
 
 }
